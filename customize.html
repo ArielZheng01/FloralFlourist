@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floral Flourist | Customize</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { margin:0; overflow:hidden; }
+    #buttons { position: absolute; top: 10px; left: 10px; z-index: 10; }
+    #buttons button { margin: 5px; padding:10px; border-radius:8px; border:none; background:#ff69b4; color:white; cursor:pointer; }
+    #buttons button:hover { background:#ff1493; }
+  </style>
+</head>
+<body>
+  <div id="buttons">
+    <button onclick="addFlower('models/rose.glb')">🌹 Rose</button>
+    <button onclick="addFlower('models/tulip.glb')">🌷 Tulip</button>
+    <button onclick="addFlower('models/sunflower.glb')">🌻 Sunflower</button>
+    <button onclick="clearBouquet()">Clear Bouquet</button>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
